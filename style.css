@@ -1,0 +1,115 @@
+* {
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    max-width: 800px;
+    margin-bottom: 24px;
+}
+
+.container-input {
+    max-width: 600px;
+    margin: 14px 0;
+}
+
+.container-input span{
+    color: blueviolet; 
+    font-size: 24px;
+}
+
+.slider{
+    width: 100%;
+    border-radius: 10px;
+    background: blueviolet;
+    height: 20px;
+    outline: none;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.button-cta{
+    height: 40px;
+    background-color: blueviolet;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+    transition: transform 0.5s;
+}
+
+.button-cta:hover{
+    transform: scale(1.05)
+}
+
+.container-password{
+    max-width: 600px;
+    margin: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    color: blueviolet;
+    font-size: 28px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.password{
+    height: 60px;
+    background-color: rgba(151, 11, 185, 0.705);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    transition: transform 0.5s;
+}
+
+.password:hover{
+    transform: scale(1.05);
+}
+
+.hide{
+    display: none;
+}
+
+.text{
+    margin-top: 15px;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 6px 8px;
+    background: rgba(151, 11, 185, 0.705);
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.container-password:hover .text{
+    visibility: visible;
+    opacity: 1;
+}
